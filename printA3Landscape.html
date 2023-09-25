@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3 Landscape Print Layout</title>
+    <style>
+        /* Base styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Print styling */
+        @media print {
+            @page {
+                size: A3 landscape;
+                margin: 20mm;
+            }
+
+            body {
+                width: 100%;
+                height: 100%;
+            }
+
+            .page-content {
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                padding: 20mm; /* Optional padding */
+                border: 1px solid #000; /* Optional border to visualize the content area */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-content">
+    <h1>Dummy Title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non risus in nulla eleifend varius. Quisque a ante est. Nunc ac enim nec odio varius mollis non in odio. Sed pulvinar, odio eget porta ullamcorper, nibh dolor dictum nisi, eget elementum enim libero nec ante. Curabitur euismod nisi id sem vestibulum, ac pulvinar elit pharetra. Nulla facilisi. Cras eget tortor non sem sollicitudin sollicitudin. Maecenas vel sapien non tortor pellentesque facilisis id at purus. Duis quis aliquam sapien, id facilisis justo. Sed eget turpis euismod, sagittis neque eu, sollicitudin ligula. Donec dignissim vehicula elit, ut tincidunt turpis tincidunt at.</p>
+</div>
+</body>
+</html>
